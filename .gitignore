@@ -1,22 +1,10 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# macOS
+.DS_Store
 
-# Virtual environments
-.venv
-venv/
-
-# Dependency files (добавьте это)
+# Python / UV
+.python-version
 uv.lock
-.uv.lock
 
-# IDE/Editor (опционально)
-.vscode/
+# IDE/Editor
 .idea/
-
-# Docker (опционально)
-.env
+.vscode/
