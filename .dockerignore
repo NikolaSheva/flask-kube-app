@@ -1,0 +1,15 @@
+# Исключаем ненужные файлы из контекста сборки Docker
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+*.db
+*.sqlite3
+.git
+.gitignore
+README.md
+LICENSE
+k8s/
+*.log

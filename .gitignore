@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# Dependency files (добавьте это)
+uv.lock
+.uv.lock
+
+# IDE/Editor (опционально)
+.vscode/
+.idea/
+
+# Docker (опционально)
+.env
