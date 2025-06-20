@@ -8,7 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Устанавливаем зависимости без кеша, чтобы минимизировать размер образа
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN python -m pip install uv
+RUN uv pip install --system -r requirements.txt
 
 # Копируем весь остальной проект
 COPY . .

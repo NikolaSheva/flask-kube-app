@@ -6,6 +6,12 @@
 # -o pipefail: ошибка в любой части пайпа завершает весь пайп
 set -euo pipefail
 
+# ✅ Проверяем, запущен ли Minikube. Если нет — запускаем.
+if ! minikube status | grep -q "host: Running"; then
+  echo "🚀 Minikube не запущен. Запускаем..."
+  minikube start --driver=docker
+fi
+
 # Имена образа, деплоймента и сервиса
 APP_NAME="flask-kube-app"
 IMAGE_NAME="$APP_NAME:latest"
